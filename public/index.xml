@@ -6,10 +6,29 @@
     <description>Recent content on Significant Digits</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Sep 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Divided States of America</title>
+      <link>/2016/09/divided-states-of-america/</link>
+      <pubDate>Wed, 21 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/09/divided-states-of-america/</guid>
+      <description>America has gotten more and more politically polarized over the years. This polarization is reflected in several states voting consistently red or blue in the presidential elections year after year. This analysis investigates several red-blue stereotypes popular in the media and measures how well they align with the actual voting patterns.
+The plot below shows the summary of last five presidential elections. 42% of states have voted democrat in 4 or more elections, while 48% of states have voted republican in 4 or more elections.</description>
+    </item>
+    
+    <item>
+      <title>Trump&#39;s emotional graph this year</title>
+      <link>/2016/08/trump-s-emotional-graph-this-year/</link>
+      <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/08/trump-s-emotional-graph-this-year/</guid>
+      <description>Last week, David Robinson published an excellent analysis of Trump’s tweets. Given below is a relatively straightforward extension of his work where I plot various emotions in Trump’s tweets over time. Each line is smoothed to remove noise. The y-axis is proportion of a given sentiment in all tweets sent per week. The sentiments were calculated using the NRC word-emotion lexicon. The tweets considered here are limited to ones sent from Android because David’s analysis showed that Trump most likely only tweets from his Android phone.</description>
+    </item>
     
     <item>
       <title>Beer vs Wine consumption in the US</title>
