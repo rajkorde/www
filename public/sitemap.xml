@@ -3,13 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2015/02/beer-vs-wine-consumption-in-the-us/</loc>
+    <lastmod>2015-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/01/the-most-successful-hollywood-movies-of-2014/</loc>
+    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</loc>
+    <lastmod>2015-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2015/01/decomposing-personal-finance-data/</loc>
     <lastmod>2015-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/analysis/</loc>
-    <lastmod>2015-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2015-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -20,7 +35,19 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2015-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2015-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/entropy/</loc>
+    <lastmod>2015-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/movies/</loc>
+    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -32,19 +59,25 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2015-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2015-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2015-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2015-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sports/</loc>
+    <lastmod>2015-01-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2015-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2015-01-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

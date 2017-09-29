@@ -22,7 +22,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.29 with theme Tranquilpeak 0.4.1-BETA">
-    <title>Decomposing personal finance data</title>
+    <title>Beer vs Wine consumption in the US</title>
     <meta name="author" content="Rajesh Korde">
     <meta name="keywords" content="">
 
@@ -30,15 +30,18 @@
     
 
     
-    <meta name="description" content="Several personal finance management websites like mint or fidelity offer services to track your assets, liabilities and net worth over time. Some standard time series analysis techniques can be applied to this data to analyze your monthly spending habits, trends in your net worth and even predict your future net worth. In this post, I do a simple experiment on my personal finance data to break down my monthly spending habits.">
-    <meta property="og:description" content="Several personal finance management websites like mint or fidelity offer services to track your assets, liabilities and net worth over time. Some standard time series analysis techniques can be applied to this data to analyze your monthly spending habits, trends in your net worth and even predict your future net worth. In this post, I do a simple experiment on my personal finance data to break down my monthly spending habits.">
+    <meta name="description" content="Do you prefer wine or beer? Does the US state you live in prefer wine or beer? And how drunk is your state in general? These are important questions that must be answered.
+To find the answer to the question, I considered per capita beer and wine consumption of all states. I found this information in the Brewers almanac from the Beer institute website (yes, this is such a thing.">
+    <meta property="og:description" content="Do you prefer wine or beer? Does the US state you live in prefer wine or beer? And how drunk is your state in general? These are important questions that must be answered.
+To find the answer to the question, I considered per capita beer and wine consumption of all states. I found this information in the Brewers almanac from the Beer institute website (yes, this is such a thing.">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Decomposing personal finance data">
-    <meta property="og:url" content="/2015/01/decomposing-personal-finance-data/">
+    <meta property="og:title" content="Beer vs Wine consumption in the US">
+    <meta property="og:url" content="/2015/02/beer-vs-wine-consumption-in-the-us/">
     <meta property="og:site_name" content="Significant Digits">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Significant Digits">
-    <meta name="twitter:description" content="Several personal finance management websites like mint or fidelity offer services to track your assets, liabilities and net worth over time. Some standard time series analysis techniques can be applied to this data to analyze your monthly spending habits, trends in your net worth and even predict your future net worth. In this post, I do a simple experiment on my personal finance data to break down my monthly spending habits.">
+    <meta name="twitter:description" content="Do you prefer wine or beer? Does the US state you live in prefer wine or beer? And how drunk is your state in general? These are important questions that must be answered.
+To find the answer to the question, I considered per capita beer and wine consumption of all states. I found this information in the Brewers almanac from the Beer institute website (yes, this is such a thing.">
     
       <meta name="twitter:creator" content="@signdigits">
     
@@ -215,15 +218,15 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Decomposing personal finance data
+      Beer vs Wine consumption in the US
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2015-01-04T00:00:00Z">
+      <time itemprop="datePublished" datetime="2015-02-15T00:00:00Z">
         
-  January 4, 2015
+  February 15, 2015
 
       </time>
     
@@ -243,93 +246,34 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Several personal finance management websites like mint or fidelity offer services to track your assets, liabilities and net worth over time. Some standard time series analysis techniques can be applied to this data to analyze your monthly spending habits, trends in your net worth and even predict your future net worth. In this post, I do a simple experiment on my personal finance data to break down my monthly spending habits.</p>
+              
 
-<p>I have always been fairly lax about tracking my money. When I bought a house back in 2007, I started a simple spreadsheet where each month I added a new row tracking my assets (investments, retirement funds, bank balance etc), liabilities (mortgage, car payments, credit card bills etc) and my net worth. Thus, I have roughly 7 years worth of data at a monthly granularity. I wanted to find out more about how my net worth changes month over month. So I created a new table that had the change in net worth each month. A large positive number means either the stock market went up, or I got a bonus at work etc. A large negative number would mean a big expense or a stock market correction. The plot below shows this data. The y-axis is obfuscated for privacy.</p>
+<p>Do you prefer wine or beer? Does the US state you live in prefer wine or beer? And how drunk is your state in general? These are important questions that must be answered.</p>
 
+<p>To find the answer to the question, I considered per capita beer and wine consumption of all states. I found this information in the Brewers almanac from the <a href="http://www.beerinstitute.org/press-releases/brewbound-recognizes-beer-institutes-mcgreevy-and-brewers-associations-pease-as-persons-of-the-year/">Beer institute website</a> (yes, this is such a thing. I wonder if they are hiring). The data is from 2011. I normalized per capita beer and wine consumption for each state against the national average so that they can be compared with each other. The beer wine index is calculated by dividing the wine consumption rate with beer consumption rate.</p>
 
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure fig-100 center" >
-  
-    <img class="fig-img" src="https://res.cloudinary.com/rajkorde/image/upload/v1506718853/Monthlydiffspixelated_sjo9y0.png" >
-  
-  
-</div>
-
-  <div style="clear:both;"></div>
-
-
-<p>Unfortunately, this graph is not very useful as its very hard to figure out any trend in this noisy data. Luckily, this time series can be decomposed into trend, seasonal and random graphs to get a clearer idea of the patterns in data. The observed graph below is the original graph and can be expressed as a sum of trend, seasonal and random graphs. The trend graph shows the overall trend in month over month net worth change. The seasonal graph extracts the cyclic spending habits. The random graph accounts for large abnormalities (big stock market surge, big expense etc) in the spending habits.</p>
-
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure fig-100 center" >
-  
-    <img class="fig-img" src="https://res.cloudinary.com/rajkorde/image/upload/v1506718853/DecompositionMonthlyDiffsPixelated_osshoe.png" >
-  
-  
-</div>
-
-  <div style="clear:both;"></div>
-
-
-<p>Key takeaways for me from the graph above:</p>
+<h3 id="interesting-states">Interesting states</h3>
 
 <ul>
-<li>The overall trend in month over month change in net worth is positive :) but it seems to have plateaued off since middle of 2013 :(</li>
-<li>I tend to spend a lot May-July every year (usually traveling or expense anticipating the sept bonus) as indicated by #2. The spike in #1 is probably from the annual bonus around aug-sept.</li>
-<li>The random graph is pretty accurate at capturing large expenses. #3 was due to a trip to India and #4 matches nicely with an vacation in Africa in 2012.</li>
+<li><strong>Washington DC</strong> tops the wine charts with per capita wine consumption that’s 2.85 times the national average.</li>
+<li><strong>New Hampshire</strong> tops beer charts with per capita beer consumption at 1.57 times the national average. Its wine consumption is also at 2.09 times national average (second in the nation) making it the booziest state in the US.</li>
+<li><strong>Arizona</strong> tracks the national average very closely in both wine (1.06x) and beer (1.03x).</li>
+<li><strong>Utah</strong> is the least boozy state (yay mormons!) clocking in at 0.6 and 0.35 times the national average in beer and wine respectively.</li>
 </ul>
+
+<p><script src="https://public.tableau.com/javascripts/api/viz_v1.js" type="text/javascript"></script>
+<div class="tableauPlaceholder" style="width: 654px; height: 742px;"><noscript><a href='#'><img alt='BeerWineDashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BeerWinePreference&#47;BeerWineDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class="tableauViz" style="display: none;" width="654" height="742"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /><param name="site_root" value="" /><param name="name" value="BeerWinePreference/BeerWineDashboard" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/Be/BeerWinePreference/BeerWineDashboard/1.png" /><param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /><param name="showVizHome" value="no" /><param name="showTabs" value="y" /></object></div></p>
+
+<p>As a bonus, I whipped up a quick chart comparing beer and spirit (hard liquor) consumption.</p>
+
+<p><script src="https://public.tableausoftware.com/javascripts/api/viz_v1.js" type="text/javascript"></script>
+<div class="tableauPlaceholder" style="width: 654px; height: 744px;"><noscript><a href='#'><img alt='BeerSpiritDashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;BeerSpiritPreference&#47;BeerSpiritDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class="tableauViz" style="display: none;" width="654" height="744"><param name="host_url" value="https%3A%2F%2Fpublic.tableausoftware.com%2F" /> <param name="site_root" value="" /><param name="name" value="BeerSpiritPreference/BeerSpiritDashboard" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/Be/BeerSpiritPreference/BeerSpiritDashboard/1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /><param name="showVizHome" value="no" /><param name="showTabs" value="y" /></object></div></p>
 
               
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
             
-              
-                
-                
-                  <div class="post-footer-tags">
-                    <span class="text-color-light text-small">TAGGED IN</span><br/>
-                    
-  <a class="tag tag--primary tag--small" href="//tags/personal-finance/">personal finance</a>
-
-  <a class="tag tag--primary tag--small" href="//tags/time-series-analysis/">time series analysis</a>
-
-                  </div>
-                
               
             
             
@@ -338,7 +282,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/" data-tooltip="Unpredictability of results in One Day International cricket matches">
+                <a class="post-action-btn btn btn--disabled">
               
                 <i class="fa fa-angle-left"></i>
                 <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -346,7 +290,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2015/01/the-most-successful-hollywood-movies-of-2014/" data-tooltip="The most successful hollywood movies of 2014">
               
                 <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                 <i class="fa fa-angle-right"></i>
@@ -363,19 +307,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2015/01/decomposing-personal-finance-data/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2015/02/beer-vs-wine-consumption-in-the-us/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2015/01/decomposing-personal-finance-data/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2015/02/beer-vs-wine-consumption-in-the-us/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2015/01/decomposing-personal-finance-data/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2015/02/beer-vs-wine-consumption-in-the-us/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -422,7 +366,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/" data-tooltip="Unpredictability of results in One Day International cricket matches">
+                <a class="post-action-btn btn btn--disabled">
               
                 <i class="fa fa-angle-left"></i>
                 <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -430,7 +374,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2015/01/the-most-successful-hollywood-movies-of-2014/" data-tooltip="The most successful hollywood movies of 2014">
               
                 <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                 <i class="fa fa-angle-right"></i>
@@ -447,19 +391,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2015/01/decomposing-personal-finance-data/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2015/02/beer-vs-wine-consumption-in-the-us/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2015/01/decomposing-personal-finance-data/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2015/02/beer-vs-wine-consumption-in-the-us/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2015/01/decomposing-personal-finance-data/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2015/02/beer-vs-wine-consumption-in-the-us/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -489,19 +433,19 @@
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2015%2F01%2Fdecomposing-personal-finance-data%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2015%2F02%2Fbeer-vs-wine-consumption-in-the-us%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2015%2F01%2Fdecomposing-personal-finance-data%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2015%2F02%2Fbeer-vs-wine-consumption-in-the-us%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2015%2F01%2Fdecomposing-personal-finance-data%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2015%2F02%2Fbeer-vs-wine-consumption-in-the-us%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -691,9 +635,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = '\/2015\/01\/decomposing-personal-finance-data\/';
+          this.page.url = '\/2015\/02\/beer-vs-wine-consumption-in-the-us\/';
           
-            this.page.identifier = '\/2015\/01\/decomposing-personal-finance-data\/'
+            this.page.identifier = '\/2015\/02\/beer-vs-wine-consumption-in-the-us\/'
           
         };
         (function() {
