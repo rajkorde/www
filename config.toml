@@ -32,8 +32,8 @@ canonifyurls = true
 
 [author]
   name = "Rajesh Korde"
-  bio = "Professional Woolgatherer"
-  job = "Data Scientist"
+  bio = "Data Scientist. Programmer. Professional Woolgatherer"
+#  job = "Data Scientist"
   location = "Seattle"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   gravatarEmail = "rkorde39@hotmail.com"
@@ -91,12 +91,12 @@ canonifyurls = true
   url = "https://twitter.com/signdigits"
 
 
-[[menu.misc]]
-  weight = 1
-  identifier = "rss"
-  name = "RSS"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
-  url = "/index.xml"
+#[[menu.misc]]
+#  weight = 1
+#  identifier = "rss"
+#  name = "RSS"
+#  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+#  url = "/index.xml"
 
 [params]
   # Customize date format use to render blog post date, categories and other
@@ -155,7 +155,7 @@ canonifyurls = true
   autoThumbnailImage = true
 
   # Your favicon path, default is "/favicon.png"
-  # favicon = "/favicon.png"
+  favicon = "https://res.cloudinary.com/rajkorde/image/upload/v1506727680/favicon192_qt0vfp.png"
 
   # Header configuration
   # The link at the right of the header is customizable
