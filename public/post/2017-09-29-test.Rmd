@@ -1,0 +1,18 @@
+---
+title: Test
+author: Rajesh Korde
+date: '2017-09-29'
+slug: test
+categories:
+  - R
+tags:
+  - social
+---
+
+### Bookmark Analysis
+
+This is an analysis of how people use their bookmarks on their browsers
+
+```{r}
+hist(mtcars$mpg)
+```

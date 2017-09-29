@@ -6,10 +6,20 @@
     <description>Recent content in Social on Interesting AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Aug 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/social/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>/2017/09/test/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/09/test/</guid>
+      <description>Bookmark AnalysisThis is an analysis of how people use their bookmarks on their browsers
+hist(mtcars$mpg)</description>
+    </item>
     
     <item>
       <title>Hidden social section showcase</title>
