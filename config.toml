@@ -18,7 +18,7 @@ defaultContentLanguage = "en-us"
 title = "Significant Digits"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "signdigits"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-58174220-1"
 paginate = 7
 canonifyurls = true
 
@@ -63,7 +63,7 @@ canonifyurls = true
   identifier = "tags"
   name = "Tags"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
-  url = "/tags"
+url = "/tags"
 [[menu.main]]
   weight = 4
   identifier = "archives"
@@ -75,7 +75,7 @@ canonifyurls = true
   identifier = "about"
   name = "About"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/#about"
+  url = "/about"
 
 [[menu.links]]
   weight = 1
@@ -89,6 +89,12 @@ canonifyurls = true
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/signdigits"
+[[menu.links]]
+  weight = 3
+  identifier = "linkedin"
+  name = "LinkedIn"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
+  url = "https://www.linkedin.com/in/rkorde/"
 
 
 #[[menu.misc]]

@@ -8,8 +8,9 @@ categories:
 tags:
   - personal finance
   - time series analysis
-
+disqusIdentifier: 20150104
 showSocial: true
+comments: true
 ---
 
 Several personal finance management websites like mint or fidelity offer services to track your assets, liabilities and net worth over time. Some standard time series analysis techniques can be applied to this data to analyze your monthly spending habits, trends in your net worth and even predict your future net worth. In this post, I do a simple experiment on my personal finance data to break down my monthly spending habits.
