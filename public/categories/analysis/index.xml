@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analysis on Significant Digits</title>
-    <link>/categories/analysis/</link>
+    <link>http://www.significantdigits.org/categories/analysis/</link>
     <description>Recent content in Analysis on Significant Digits</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/analysis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.significantdigits.org/categories/analysis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Divided States of America</title>
-      <link>/2016/09/divided-states-of-america/</link>
+      <link>http://www.significantdigits.org/2016/09/divided-states-of-america/</link>
       <pubDate>Wed, 21 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/09/divided-states-of-america/</guid>
+      <guid>http://www.significantdigits.org/2016/09/divided-states-of-america/</guid>
       <description>America has gotten more and more politically polarized over the years. This polarization is reflected in several states voting consistently red or blue in the presidential elections year after year. This analysis investigates several red-blue stereotypes popular in the media and measures how well they align with the actual voting patterns.
 The plot below shows the summary of last five presidential elections. 42% of states have voted democrat in 4 or more elections, while 48% of states have voted republican in 4 or more elections.</description>
     </item>
     
     <item>
       <title>Trump&#39;s emotional graph this year</title>
-      <link>/2016/08/trump-s-emotional-graph-this-year/</link>
+      <link>http://www.significantdigits.org/2016/08/trump-s-emotional-graph-this-year/</link>
       <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/08/trump-s-emotional-graph-this-year/</guid>
+      <guid>http://www.significantdigits.org/2016/08/trump-s-emotional-graph-this-year/</guid>
       <description>Last week, David Robinson published an excellent analysis of Trump’s tweets. Given below is a relatively straightforward extension of his work where I plot various emotions in Trump’s tweets over time. Each line is smoothed to remove noise. The y-axis is proportion of a given sentiment in all tweets sent per week. The sentiments were calculated using the NRC word-emotion lexicon. The tweets considered here are limited to ones sent from Android because David’s analysis showed that Trump most likely only tweets from his Android phone.</description>
     </item>
     
     <item>
       <title>Beer vs Wine consumption in the US</title>
-      <link>/2015/02/beer-vs-wine-consumption-in-the-us/</link>
+      <link>http://www.significantdigits.org/2015/02/beer-vs-wine-consumption-in-the-us/</link>
       <pubDate>Sun, 15 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/02/beer-vs-wine-consumption-in-the-us/</guid>
+      <guid>http://www.significantdigits.org/2015/02/beer-vs-wine-consumption-in-the-us/</guid>
       <description>Do you prefer wine or beer? Does the US state you live in prefer wine or beer? And how drunk is your state in general? These are important questions that must be answered.
 To find the answer to the question, I considered per capita beer and wine consumption of all states. I found this information in the Brewers almanac from the Beer institute website (yes, this is such a thing.</description>
     </item>
     
     <item>
       <title>The most successful hollywood movies of 2014</title>
-      <link>/2015/01/the-most-successful-hollywood-movies-of-2014/</link>
+      <link>http://www.significantdigits.org/2015/01/the-most-successful-hollywood-movies-of-2014/</link>
       <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/01/the-most-successful-hollywood-movies-of-2014/</guid>
+      <guid>http://www.significantdigits.org/2015/01/the-most-successful-hollywood-movies-of-2014/</guid>
       <description>So what do you think is the most successful Hollywood Movie of 2014? Transformers? Lego movie? Interstellar? There’s one movie that stood head and shoulders above the rest when it comes to financial success and if you’re like me, you may have never heard of it.
 Before digging deeper, we need to clearly define what financial success means for a movie. I took inspiration from this excellent post from Randal Olson and defined success of a movie to be the ratio of its box office earnings divided by its production costs.</description>
     </item>
     
     <item>
       <title>Unpredictability of results in One Day International cricket matches</title>
-      <link>/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</link>
+      <link>http://www.significantdigits.org/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</guid>
+      <guid>http://www.significantdigits.org/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</guid>
       <description>Ask any fan of any sports team and they would claim their team to be the most unpredictable with no guarantee of any result on a given day. The glorious uncertainties of cricket have been extolled by many a commentator over the years. In this post, I do an analysis of One Day International results to see how unpredictability in cricket has fared over the years and finally answer the question: Which is the most unpredictable team in international cricket?</description>
     </item>
     
     <item>
       <title>Decomposing personal finance data</title>
-      <link>/2015/01/decomposing-personal-finance-data/</link>
+      <link>http://www.significantdigits.org/2015/01/decomposing-personal-finance-data/</link>
       <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/01/decomposing-personal-finance-data/</guid>
+      <guid>http://www.significantdigits.org/2015/01/decomposing-personal-finance-data/</guid>
       <description>Several personal finance management websites like mint or fidelity offer services to track your assets, liabilities and net worth over time. Some standard time series analysis techniques can be applied to this data to analyze your monthly spending habits, trends in your net worth and even predict your future net worth. In this post, I do a simple experiment on my personal finance data to break down my monthly spending habits.</description>
     </item>
     
