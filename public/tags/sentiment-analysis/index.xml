@@ -17,7 +17,9 @@
       <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>http://www.significantdigits.org/2016/08/trump-s-emotional-graph-this-year/</guid>
-      <description>Last week, David Robinson published an excellent analysis of Trump’s tweets. Given below is a relatively straightforward extension of his work where I plot various emotions in Trump’s tweets over time. Each line is smoothed to remove noise. The y-axis is proportion of a given sentiment in all tweets sent per week. The sentiments were calculated using the NRC word-emotion lexicon. The tweets considered here are limited to ones sent from Android because David’s analysis showed that Trump most likely only tweets from his Android phone.</description>
+      <description>&lt;p&gt;Last week, David Robinson published an &lt;a href=&#34;http://varianceexplained.org/r/trump-tweets/&#34;&gt;excellent analysis&lt;/a&gt; of Trump’s tweets. Given below is a relatively straightforward extension of his work where I plot various emotions in Trump’s tweets over time. Each line is smoothed to remove noise. The y-axis is proportion of a given sentiment in all tweets sent per week. The sentiments were calculated using the &lt;a href=&#34;http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm&#34;&gt;NRC word-emotion lexicon&lt;/a&gt;. The tweets considered here are limited to ones sent from Android because David’s analysis showed that Trump most likely only tweets from his Android phone.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

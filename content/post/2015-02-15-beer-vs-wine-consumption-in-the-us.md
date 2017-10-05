@@ -10,6 +10,8 @@ tags: []
 
 Do you prefer wine or beer? Does the US state you live in prefer wine or beer? And how drunk is your state in general? These are important questions that must be answered.
 
+<!--more-->
+
 To find the answer to the question, I considered per capita beer and wine consumption of all states. I found this information in the Brewers almanac from the [Beer institute website](http://www.beerinstitute.org/press-releases/brewbound-recognizes-beer-institutes-mcgreevy-and-brewers-associations-pease-as-persons-of-the-year/) (yes, this is such a thing. I wonder if they are hiring). The data is from 2011. I normalized per capita beer and wine consumption for each state against the national average so that they can be compared with each other. The beer wine index is calculated by dividing the wine consumption rate with beer consumption rate.
 
 ### Interesting states

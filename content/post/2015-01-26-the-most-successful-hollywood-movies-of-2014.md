@@ -11,6 +11,8 @@ tags:
 
 So what do you think is the most successful Hollywood Movie of 2014? Transformers? Lego movie? Interstellar? There’s one movie that stood head and shoulders above the rest when it comes to financial success and if you’re like me, you may have never heard of it.
 
+<!--more-->
+
 Before digging deeper, we need to clearly define what financial success means for a movie. I took inspiration from this [excellent post](http://www.randalolson.com/2014/12/29/does-a-bigger-film-production-budget-result-in-more-ticket-sales/) from Randal Olson and defined success of a movie to be the ratio of its box office earnings divided by its production costs. So a movie like Transformers might make a lot at the box office, but it also cost over 200 million dollars to make. So the Return on investment isn’t as high as you would think. Before we look at the data, few caveats:
 
 * Only revenues from US market was used. The worldwide revenue data is noisy, incomplete and unreliable.

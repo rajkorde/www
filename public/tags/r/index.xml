@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Significant Digits</title>
+    <link>http://www.significantdigits.org/tags/r/</link>
+    <description>Recent content in R on Significant Digits</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.significantdigits.org/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Switching from Base R to tidyverse</title>
+      <link>http://www.significantdigits.org/2017/10/switching-from-base-r-to-tidyverse/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.significantdigits.org/2017/10/switching-from-base-r-to-tidyverse/</guid>
+      <description>One of the most transformative changes in my coding has been switching to tidyverse packages from base R. Tidy code is easier to write, read, maintain and almost always faster than the base R counterparts. While there has been some debate on whether base R should be taught to newcomers first or should they jump right into tidyverse, I havent heard anyone deny that ultimately, everyone should be be using tidyverse.</description>
+    </item>
+    
+  </channel>
+</rss>

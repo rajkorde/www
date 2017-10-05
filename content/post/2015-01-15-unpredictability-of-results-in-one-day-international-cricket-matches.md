@@ -12,6 +12,8 @@ tags:
 
 Ask any fan of any sports team and they would claim their team to be the most unpredictable with no guarantee of any result on a given day. The glorious uncertainties of cricket have been extolled by many a commentator over the years. In this post, I do an analysis of One Day International results to see how unpredictability in cricket has fared over the years and finally answer the question: Which is the most unpredictable team in international cricket?
 
+<!--more-->
+
 But first, lets talk about a few rules for the analysis:
 
 * Only ODI results were compared. So no tests or T20s.

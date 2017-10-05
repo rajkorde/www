@@ -11,6 +11,8 @@ tags:
 
 America has gotten more and more [politically polarized](http://www.people-press.org/2014/06/12/political-polarization-in-the-american-public/) over the years. This polarization is reflected in several states voting consistently red or blue in the presidential elections year after year. This analysis investigates several red-blue stereotypes popular in the media and measures how well they align with the actual voting patterns.
 
+<!--more-->
+
 The plot below shows the summary of last five presidential elections. 42% of states have voted democrat in 4 or more elections, while 48% of states have voted republican in 4 or more elections. The bimodal nature of the graph is a stark reminder of the increasing schism in the country in political preference (click image to see it in higher res).
 
 {{< image classes="fig-100 center clear" src="https://res.cloudinary.com/rajkorde/image/upload/v1506724929/ElectionResults-1_imgj9v.png">}}

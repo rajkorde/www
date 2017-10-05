@@ -1,0 +1,31 @@
+---
+title: Switching from Base R to tidyverse
+author: Rajesh Korde
+date: '2017-10-05'
+slug: switching-from-base-r-to-tidyverse
+categories:
+  - Coding
+tags:
+  - R
+  - tidyverse
+---
+
+One of the most transformative changes in my coding has been switching to tidyverse packages from base R. Tidy code is easier to write, read, maintain and almost always faster than the base R counterparts. While there has been some debate on whether base R should be taught to newcomers first or should they jump right into tidyverse, I havent heard anyone deny that ultimately, everyone should be be using tidyverse. A lot of online courses continue to use base R to teach students R programming. Hopefully the table below helps you swtich from base R to their equivalent tidyverse commands when you are ready.
+
+<!--more-->
+
+Couple of notes before we start. The list below is not exhaustive (best to read package documentation for that). For instance, it doesnt cover lubridate (which covers date/time related functions), forcats (which covers everything you would want to do to factors), broom (which tidies up messy R objects), modelr (which has helper functions for creating models) or ggplot. I also use data frame and tibble interchangeably, although they are obviously different.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(readxl)
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+d <- read_xlsx("D:/Documents/Rajesh/SignificantDigits/blogs/BaseRToDplyr.xlsx")
+
+d <- replace_na(d, list(Comment = " "))
+
+kable(d) %>%
+  kable_styling(full_width = F)
+  

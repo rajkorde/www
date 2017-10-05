@@ -15,6 +15,7 @@ comments: true
 
 Several personal finance management websites like mint or fidelity offer services to track your assets, liabilities and net worth over time. Some standard time series analysis techniques can be applied to this data to analyze your monthly spending habits, trends in your net worth and even predict your future net worth. In this post, I do a simple experiment on my personal finance data to break down my monthly spending habits.
 
+<!--more-->
 
 I have always been fairly lax about tracking my money. When I bought a house back in 2007, I started a simple spreadsheet where each month I added a new row tracking my assets (investments, retirement funds, bank balance etc), liabilities (mortgage, car payments, credit card bills etc) and my net worth. Thus, I have roughly 7 years worth of data at a monthly granularity. I wanted to find out more about how my net worth changes month over month. So I created a new table that had the change in net worth each month. A large positive number means either the stock market went up, or I got a bonus at work etc. A large negative number would mean a big expense or a stock market correction. The plot below shows this data. The y-axis is obfuscated for privacy.
 

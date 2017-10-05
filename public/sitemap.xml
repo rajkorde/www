@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.significantdigits.org/2017/10/switching-from-base-r-to-tidyverse/</loc>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.significantdigits.org/2016/09/divided-states-of-america/</loc>
     <lastmod>2016-09-21T00:00:00+00:00</lastmod>
   </url>
@@ -50,6 +55,12 @@
   </url>
   
   <url>
+    <loc>http://www.significantdigits.org/categories/coding/</loc>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.significantdigits.org/tags/entropy/</loc>
     <lastmod>2015-01-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -75,7 +86,13 @@
   
   <url>
     <loc>http://www.significantdigits.org/post/</loc>
-    <lastmod>2016-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.significantdigits.org/tags/r/</loc>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -87,7 +104,7 @@
   
   <url>
     <loc>http://www.significantdigits.org/</loc>
-    <lastmod>2016-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -100,6 +117,12 @@
   <url>
     <loc>http://www.significantdigits.org/tags/</loc>
     <lastmod>2015-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.significantdigits.org/tags/tidyverse/</loc>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
