@@ -253,7 +253,7 @@ ga('send', 'pageview');
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>One of the most transformative changes in my coding has been switching to tidyverse packages from base R. Tidy code is easier to write, read, maintain and almost always faster than the base R counterparts. While there has been some debate on whether base R should be taught to newcomers first or should they jump right into tidyverse, I havent heard anyone deny that ultimately, everyone should be be using tidyverse. A lot of online courses continue to use base R to teach students R programming. Hopefully the table below helps you swtich from base R to their equivalent tidyverse commands when you are ready.</p>
+              <p>One of the most transformative changes in my coding has been switching to tidyverse packages from base R. Tidy code is easier to write, read, maintain and almost always faster than the base R counterparts. While there has been some debate on whether base R should be taught to newcomers first or should they jump right into tidyverse, I havent heard anyone deny that ultimately, everyone should be be using tidyverse. A lot of online courses continue to use base R to teach students R programming. Hopefully the table below helps you switch from base R to their equivalent tidyverse commands when you are ready.</p>
 <!--more-->
 <p>Couple of notes before we start. The list below is not exhaustive (best to read package documentation for that). For instance, it doesnt cover lubridate (which covers date/time related functions), forcats (which covers everything you would want to do to factors), broom (which tidies up messy R objects), modelr (which has helper functions for creating models) or ggplot. I also use data frame and tibble interchangeably, although they are obviously different.</p>
 <table>
@@ -298,7 +298,7 @@ ga('send', 'pageview');
 </tr>
 <tr class="even">
 <td align="left">aggregate()</td>
-<td align="left">summarise(), summarize()</td>
+<td align="left">summarise(), summarize(), do()</td>
 <td align="left">reduce grouped values to a single value</td>
 <td align="left">see also varaints like summarize_if()</td>
 </tr>
@@ -311,7 +311,7 @@ ga('send', 'pageview');
 <tr class="even">
 <td align="left">unique()</td>
 <td align="left">distinct()</td>
-<td align="left">finds unique values in a vector, but its much faster</td>
+<td align="left">finds unique rows in a data frame, but its much, faster</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
@@ -408,7 +408,7 @@ ga('send', 'pageview');
 <td align="left">mtcars[3:5,]</td>
 <td align="left">slice()</td>
 <td align="left">select rows bases on row numbers</td>
-<td align="left">select rows by row numbers</td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">seq_along(), quantile()</td>
@@ -419,7 +419,7 @@ ga('send', 'pageview');
 <tr class="even">
 <td align="left">no easy way</td>
 <td align="left">complete(), expand()</td>
-<td align="left">expands the dataframe so that mentioned columns are completely filled out</td>
+<td align="left">expands the dataframe so that supplied columns are completely filled out</td>
 <td align="left">often used with nesting(), see also full_seq()</td>
 </tr>
 <tr class="odd">
@@ -453,10 +453,22 @@ ga('send', 'pageview');
 <td align="left"></td>
 </tr>
 <tr class="even">
+<td align="left">replicate()</td>
+<td align="left">rerun()</td>
+<td align="left">run an expression n number of times</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">unlist(lapply(x, <code>[[</code>, n))</td>
+<td align="left">pluck()</td>
+<td align="left">extract elements out of a list</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
 <td align="left">lapply(), sapply()</td>
-<td align="left">map()</td>
+<td align="left">map(), map2()</td>
 <td align="left">apply a function to a set of values, working with lists</td>
-<td align="left">see also do(), map_chr(), map_lgl(), map_int(), map_dbl(), map_df()</td>
+<td align="left">see also map_chr(), map_lgl(), map_int(), map_dbl(), map_df()</td>
 </tr>
 <tr class="odd">
 <td align="left">paste0()</td>
