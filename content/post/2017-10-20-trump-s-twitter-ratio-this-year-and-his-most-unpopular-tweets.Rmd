@@ -13,7 +13,7 @@ tags:
 
 ```{r global_options, include=FALSE}
 library(knitr)
-knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE, warning=FALSE, 
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, 
                       message=FALSE, cache=TRUE)
 ```
 
@@ -33,7 +33,7 @@ I calculate twitter ratio as replies divided by favorites and not retweets, beca
 
 ```{r}
 
-tab <- read_feather(path = "D:/GitRepos/Github/RTestCode/trumptwitter.feather")
+tab <- read_feather(path = "D:/GitRepos/Github/RTestCode/Data/trumptwitter.feather")
 
 invisible_tweets <- filter(tab, grepl(pattern = "private lunch|LIMITED EDITION", x = text)) %>%
   select(id_str)
