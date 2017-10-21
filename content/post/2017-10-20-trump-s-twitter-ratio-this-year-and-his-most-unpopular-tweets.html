@@ -1,0 +1,235 @@
+---
+title: Trump's Twitter Ratio this year and his most unpopular tweets
+author: Rajesh Korde
+date: '2017-10-20'
+slug: trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets
+categories:
+  - Analysis
+tags:
+  - politics
+  - R
+  - twitter
+---
+
+
+
+<p><a href="http://knowyourmeme.com/memes/the-ratio">Twitter Ratio</a> is an unofficial measure of how unpopular a particular tweet is. It is calculated simply by dividing the number of replies to the tweet by the number of favorites (or retweets). The logic being if its a crappy tweet, you would get fewer favorites and more replies. Thus higher the ratio, worse the tweet. In this post, I look at Trump’s twitter ratio since the day of his inauguration and his most unpopular tweets (as in tweets with highest twitter ratio).</p>
+<!--more-->
+<p>I calculate twitter ratio as replies divided by favorites and not retweets, because I have found many people ironically retweet Trump’s tweets. But I doubt anyone favorites his tweets ironically. Given below is his twitter ratio calculated weekly. The trend line shows that his twitter ratio has been gradually increasing at a slow rate. However, this may be because his twitter ratio was abnormally low in the first couple of weeks of his presidency. What I found more striking is the wild variations in the ratio (changes by almost 2x). I think its reflective of the chaotic nature of his presidency where a storm is always brewing anytime there is some quiet.</p>
+<p><img src="/post/2017-10-20-trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets_files/figure-html/unnamed-chunk-3-1.png" width="1152" /></p>
+<p>Given below are the top 25 tweets with the worst twitter ratio.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Tweet</th>
+<th align="left">Created</th>
+<th align="right">Replies</th>
+<th align="right">Retweets</th>
+<th align="right">Favorites</th>
+<th align="right">Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/880410114456465411">…to Mar-a-Lago 3 nights in a row around New Year’s Eve, and insisted on joining me. She was bleeding badly from a face-lift. I said no!</a></td>
+<td align="left">2017-06-29</td>
+<td align="right">88687</td>
+<td align="right">20580</td>
+<td align="right">78901</td>
+<td align="right">1.12</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/890820505330212864">3 Republicans and 48 Democrats let the American people down. As I said from the beginning, let ObamaCare implode, then deal. Watch!</a></td>
+<td align="left">2017-07-28</td>
+<td align="right">92407</td>
+<td align="right">26914</td>
+<td align="right">92817</td>
+<td align="right">1.00</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/914089003745468417">…Such poor leadership ability by the Mayor of San Juan, and others in Puerto Rico, who are not able to get their workers to help. They….</a></td>
+<td align="left">2017-09-30</td>
+<td align="right">53404</td>
+<td align="right">15531</td>
+<td align="right">56659</td>
+<td align="right">0.94</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/914269704440737792">In analyzing the Alabama Primary race,FAKE NEWS always fails to mention that the candidate I endorsed went up MANY points after endorsement!</a></td>
+<td align="left">2017-09-30</td>
+<td align="right">44366</td>
+<td align="right">7437</td>
+<td align="right">47332</td>
+<td align="right">0.94</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/917172144710103040">Nobody could have done what I’ve done for #PuertoRico with so little appreciation. So much work! https://t.co/k2jAkIpfjI</a></td>
+<td align="left">2017-10-08</td>
+<td align="right">64904</td>
+<td align="right">19830</td>
+<td align="right">77693</td>
+<td align="right">0.84</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/918432809282342912">…We cannot keep FEMA, the Military &amp; the First Responders, who have been amazing (under the most difficult circumstances) in P.R. forever!</a></td>
+<td align="left">2017-10-12</td>
+<td align="right">52742</td>
+<td align="right">13265</td>
+<td align="right">63349</td>
+<td align="right">0.83</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/918112884630093825">With all of the Fake News coming out of NBC and the Networks, at what point is it appropriate to challenge their License? Bad for country!</a></td>
+<td align="left">2017-10-11</td>
+<td align="right">77278</td>
+<td align="right">23149</td>
+<td align="right">98055</td>
+<td align="right">0.79</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/863007411132649473">James Comey better hope that there are no “tapes” of our conversations before he starts leaking to the press!</a></td>
+<td align="left">2017-05-12</td>
+<td align="right">59393</td>
+<td align="right">25551</td>
+<td align="right">76244</td>
+<td align="right">0.78</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/831510532318429184">The real story here is why are there so many illegal leaks coming out of Washington? Will these leaks be happening as I deal on N.Korea etc?</a></td>
+<td align="left">2017-02-14</td>
+<td align="right">83930</td>
+<td align="right">26353</td>
+<td align="right">109970</td>
+<td align="right">0.76</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/853595628655587334">I did what was an almost an impossible thing to do for a Republican-easily won the Electoral College! Now Tax Returns are brought up again?</a></td>
+<td align="left">2017-04-16</td>
+<td align="right">53038</td>
+<td align="right">12286</td>
+<td align="right">69721</td>
+<td align="right">0.76</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/865173176854204416">This is the single greatest witch hunt of a politician in American history!</a></td>
+<td align="left">2017-05-18</td>
+<td align="right">89749</td>
+<td align="right">36376</td>
+<td align="right">121573</td>
+<td align="right">0.74</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/871725780535062528">Pathetic excuse by London Mayor Sadiq Khan who had to think fast on his “no reason to be alarmed” statement. MSM is working hard to sell it!</a></td>
+<td align="left">2017-06-05</td>
+<td align="right">69716</td>
+<td align="right">28897</td>
+<td align="right">95158</td>
+<td align="right">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/914087234869047296">The Mayor of San Juan, who was very complimentary only a few days ago, has now been told by the Democrats that you must be nasty to Trump.</a></td>
+<td align="left">2017-09-30</td>
+<td align="right">51442</td>
+<td align="right">21911</td>
+<td align="right">70491</td>
+<td align="right">0.73</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/897869174323728385">Rather than putting pressure on the businesspeople of the Manufacturing Council &amp; Strategy &amp; Policy Forum, I am ending both. Thank you all!</a></td>
+<td align="left">2017-08-16</td>
+<td align="right">63260</td>
+<td align="right">20101</td>
+<td align="right">87094</td>
+<td align="right">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/859209801175269376">President Andrew Jackson, who died 16 years before the Civil War started, saw it coming and was angry. Would never have let it happen!</a></td>
+<td align="left">2017-05-02</td>
+<td align="right">40844</td>
+<td align="right">11644</td>
+<td align="right">56757</td>
+<td align="right">0.72</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/833435244451753984">My statement as to what’s happening in Sweden was in reference to a story that was broadcast on FoxNews concerning immigrants &amp; Sweden.</a></td>
+<td align="left">2017-02-19</td>
+<td align="right">76999</td>
+<td align="right">25967</td>
+<td align="right">110593</td>
+<td align="right">0.70</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/845974102619906048">Democrats are smiling in D.C. that the Freedom Caucus, with the help of Club For Growth and Heritage, have saved Planned Parenthood &amp; Ocare!</a></td>
+<td align="left">2017-03-26</td>
+<td align="right">43861</td>
+<td align="right">15470</td>
+<td align="right">63536</td>
+<td align="right">0.69</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/829356871848951809">My daughter Ivanka has been treated so unfairly by Nordstrom. She is a great person – always pushing me to do the right thing! Terrible!</a></td>
+<td align="left">2017-02-08</td>
+<td align="right">95122</td>
+<td align="right">26913</td>
+<td align="right">140891</td>
+<td align="right">0.68</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/861713823505494016">The Russia-Trump collusion story is a total hoax, when will this taxpayer funded charade end?</a></td>
+<td align="left">2017-05-08</td>
+<td align="right">42919</td>
+<td align="right">16292</td>
+<td align="right">63779</td>
+<td align="right">0.67</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/864452996129853444">I have been asking Director Comey &amp; others, from the beginning of my administration, to find the LEAKERS in the intelligence community…..</a></td>
+<td align="left">2017-05-16</td>
+<td align="right">53580</td>
+<td align="right">19755</td>
+<td align="right">79761</td>
+<td align="right">0.67</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/873120139222306817">Despite so many false statements and lies, total and complete vindication…and WOW, Comey is a leaker!</a></td>
+<td align="left">2017-06-09</td>
+<td align="right">82914</td>
+<td align="right">36643</td>
+<td align="right">124844</td>
+<td align="right">0.66</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/917734186848579584">The Failing nytimes set Liddle’ Bob Corker up by recording his conversation. Was made to sound a fool, and that’s what I am dealing with!</a></td>
+<td align="left">2017-10-10</td>
+<td align="right">40837</td>
+<td align="right">14639</td>
+<td align="right">61920</td>
+<td align="right">0.66</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/898254409511129088">Study what General Pershing of the United States did to terrorists when caught. There was no more Radical Islamic Terror for 35 years!</a></td>
+<td align="left">2017-08-17</td>
+<td align="right">72079</td>
+<td align="right">30338</td>
+<td align="right">109674</td>
+<td align="right">0.66</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/890260758050856961">IN AMERICA WE DON’T WORSHIP GOVERNMENT - WE WORSHIP GOD!<f0><U+009F><U+008E><U+00A5>https://t.co/jIejSgVnnA</a></td>
+<td align="left">2017-07-26</td>
+<td align="right">85100</td>
+<td align="right">37754</td>
+<td align="right">130322</td>
+<td align="right">0.65</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://twitter.com/realDonaldTrump/status/880771685460344832">Watched low rated Morning_Joe for first time in long time. FAKE NEWS. He called me to stop a National Enquirer article. I said no! Bad show</a></td>
+<td align="left">2017-06-30</td>
+<td align="right">53607</td>
+<td align="right">19097</td>
+<td align="right">82174</td>
+<td align="right">0.65</td>
+</tr>
+</tbody>
+</table>
+<p>I got the data for Trump’s tweets from <a href="http://www.trumptwitterarchive.com/">trumptwitterarchive.com</a>. You can find all the source code for this blog post <a href="https://github.com/rajkorde/RTestCode/blob/master/Scripts/TrumpTwitterArchive.R">here</a>.</p>

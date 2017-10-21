@@ -1,0 +1,16 @@
+base
+knitr
+jsonlite
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+lubridate
+feather
+bindrcpp
+kableExtra
+pander

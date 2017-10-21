@@ -1,0 +1,112 @@
+---
+title: Trump's Twitter Ratio this year and his most unpopular tweets
+author: Rajesh Korde
+date: '2017-10-20'
+slug: trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets
+categories:
+  - Analysis
+tags:
+  - politics
+  - R
+  - twitter
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE, warning=FALSE, 
+                      message=FALSE, cache=TRUE)
+```
+
+```{r}
+library(feather)
+library(tidyverse)
+library(stringr)
+library(lubridate)
+```
+
+[Twitter Ratio](http://knowyourmeme.com/memes/the-ratio) is an unofficial measure of how unpopular a particular tweet is. It is calculated simply by dividing the number of replies to the tweet by the number of favorites (or retweets). The logic being if its a crappy tweet, you would get fewer favorites and more replies. Thus higher the ratio, worse the tweet. In this post, I look at Trump's twitter ratio since the day of his inauguration and his most unpopular tweets (as in tweets with highest twitter ratio).
+
+<!--more-->
+
+I calculate twitter ratio as replies divided by favorites and not retweets, because I have found many people ironically retweet Trump's tweets. But I doubt anyone favorites his tweets ironically. Given below is his twitter ratio calculated weekly. The trend line shows that his twitter ratio has been gradually increasing at a slow rate. However, this may be because his twitter ratio was abnormally low in the first couple of weeks of his presidency. What I found more striking is the wild variations in the ratio (changes by almost 2x). I think its reflective of the chaotic nature of his presidency where a storm is always brewing anytime there is some quiet.
+
+
+```{r}
+
+tab <- read_feather(path = "D:/GitRepos/Github/RTestCode/trumptwitter.feather")
+
+invisible_tweets <- filter(tab, grepl(pattern = "private lunch|LIMITED EDITION", x = text)) %>%
+  select(id_str)
+
+ratio_tweets <- filter(tab, replies > 50 & favorites > 50) %>%
+  filter(!id_str %in% invisible_tweets$id_str) %>%
+  mutate(ratio = replies/favorites) %>%
+  arrange(desc(ratio))
+
+```
+
+```{r}
+library(stringr)
+library(lubridate)
+
+month_lookup <- 1:12
+names(month_lookup) <- c("Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+                         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+fix_date <- function(dt) {
+  y <- str_split(dt, " ")[[1]][c(2, 3, 6)]
+  y[1] <- unname(month_lookup[y[1]])
+  return(mdy(paste(y, collapse = " ")))
+}
+
+d <- ratio_tweets %>% 
+  rowwise() %>%
+  bind_cols(do(., {
+    data.frame(date = fix_date(.$created_at))
+  })) %>%
+  ungroup() %>%
+  mutate(week = week(date))
+
+
+by_week <- d %>%
+  filter(date > mdy("1/20/2017")) %>%
+  group_by(week) %>%
+  summarise(replies = sum(replies), favorites = sum(favorites)) %>%
+  mutate(ratio = replies/favorites) %>%
+  mutate(date = ymd("2017-01-01") + weeks(week))
+
+
+ggplot(by_week, aes(date, ratio)) + 
+  geom_line() +
+  geom_smooth(se = FALSE, method = "lm") +
+  xlab("") +
+  ylab("Twitter Ratio") +
+  ggtitle("Trump's weekly twitter ratio") +
+  theme_bw()
+
+
+```
+
+
+Given below are the top 25 tweets with the worst twitter ratio.
+
+```{r}
+library(kableExtra)
+options(scipen=1, digits=2)
+
+top <- d %>%
+  mutate(tweet_text = paste0("[", text, "](", url, ")")) %>%
+  mutate(tweet_text = str_replace(tweet_text, "@", "")) %>%
+  select(Tweet = tweet_text, 
+         Created = date, 
+         Replies = replies,
+         Retweets = retweets,
+         Favorites = favorites,
+         Ratio = ratio) %>%
+  slice(1:25)
+
+kable(top) %>%
+  kable_styling(full_width = F)
+```
+
+I got the data for Trump's tweets from [trumptwitterarchive.com](http://www.trumptwitterarchive.com/). You can find all the source code for this blog post [here](https://github.com/rajkorde/RTestCode/blob/master/Scripts/TrumpTwitterArchive.R).
