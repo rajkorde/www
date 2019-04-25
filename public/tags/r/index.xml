@@ -17,7 +17,11 @@
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets/</guid>
-      <description>Twitter Ratio is an unofficial measure of how unpopular a particular tweet is. It is calculated simply by dividing the number of replies to the tweet by the number of favorites (or retweets). The logic being if its a crappy tweet, you would get fewer favorites and more replies. Thus higher the ratio, worse the tweet. In this post, I look at Trump’s twitter ratio since the day of his inauguration and his most unpopular tweets (as in tweets with highest twitter ratio).</description>
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;http://knowyourmeme.com/memes/the-ratio&#34;&gt;Twitter Ratio&lt;/a&gt; is an unofficial measure of how unpopular a particular tweet is. It is calculated simply by dividing the number of replies to the tweet by the number of favorites (or retweets). The logic being if its a crappy tweet, you would get fewer favorites and more replies. Thus higher the ratio, worse the tweet. In this post, I look at Trump’s twitter ratio since the day of his inauguration and his most unpopular tweets (as in tweets with highest twitter ratio).&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,7 +30,12 @@
       <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/10/switching-from-base-r-to-tidyverse/</guid>
-      <description>One of the most transformative changes in my coding has been switching to tidyverse packages from base R. Tidy code is easier to write, read, maintain and almost always faster than the base R counterparts. While there has been some debate on whether base R should be taught to newcomers first or should they jump right into tidyverse, I havent heard anyone deny that ultimately, everyone should be be using tidyverse.</description>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;One of the most transformative changes in my coding has been switching to tidyverse packages from base R. Tidy code is easier to write, read, maintain and almost always faster than the base R counterparts. While there has been some debate on whether base R should be taught to newcomers first or should they jump right into tidyverse, I havent heard anyone deny that ultimately, everyone should be be using tidyverse. A lot of online courses continue to use base R to teach students R programming. Hopefully the table below helps you switch from base R to their equivalent tidyverse commands when you are ready.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
