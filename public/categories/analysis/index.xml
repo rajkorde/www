@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analysis on Significant Digits</title>
-    <link>http://www.significantdigits.org/categories/analysis/</link>
+    <link>/categories/analysis/</link>
     <description>Recent content in Analysis on Significant Digits</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.significantdigits.org/categories/analysis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/analysis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Trump&#39;s Twitter Ratio this year and his most unpopular tweets</title>
-      <link>http://www.significantdigits.org/2017/10/trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets/</link>
+      <link>/2017/10/trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets/</link>
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/2017/10/trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets/</guid>
+      <guid>/2017/10/trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets/</guid>
       <description>Twitter Ratio is an unofficial measure of how unpopular a particular tweet is. It is calculated simply by dividing the number of replies to the tweet by the number of favorites (or retweets). The logic being if its a crappy tweet, you would get fewer favorites and more replies. Thus higher the ratio, worse the tweet. In this post, I look at Trump’s twitter ratio since the day of his inauguration and his most unpopular tweets (as in tweets with highest twitter ratio).</description>
     </item>
     
     <item>
       <title>Divided States of America</title>
-      <link>http://www.significantdigits.org/2016/09/divided-states-of-america/</link>
+      <link>/2016/09/divided-states-of-america/</link>
       <pubDate>Wed, 21 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/2016/09/divided-states-of-america/</guid>
+      <guid>/2016/09/divided-states-of-america/</guid>
       <description>&lt;p&gt;America has gotten more and more &lt;a href=&#34;http://www.people-press.org/2014/06/12/political-polarization-in-the-american-public/&#34;&gt;politically polarized&lt;/a&gt; over the years. This polarization is reflected in several states voting consistently red or blue in the presidential elections year after year. This analysis investigates several red-blue stereotypes popular in the media and measures how well they align with the actual voting patterns.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -33,10 +33,10 @@
     
     <item>
       <title>Trump&#39;s emotional graph this year</title>
-      <link>http://www.significantdigits.org/2016/08/trump-s-emotional-graph-this-year/</link>
+      <link>/2016/08/trump-s-emotional-graph-this-year/</link>
       <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/2016/08/trump-s-emotional-graph-this-year/</guid>
+      <guid>/2016/08/trump-s-emotional-graph-this-year/</guid>
       <description>&lt;p&gt;Last week, David Robinson published an &lt;a href=&#34;http://varianceexplained.org/r/trump-tweets/&#34;&gt;excellent analysis&lt;/a&gt; of Trump’s tweets. Given below is a relatively straightforward extension of his work where I plot various emotions in Trump’s tweets over time. Each line is smoothed to remove noise. The y-axis is proportion of a given sentiment in all tweets sent per week. The sentiments were calculated using the &lt;a href=&#34;http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm&#34;&gt;NRC word-emotion lexicon&lt;/a&gt;. The tweets considered here are limited to ones sent from Android because David’s analysis showed that Trump most likely only tweets from his Android phone.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -44,10 +44,10 @@
     
     <item>
       <title>Beer vs Wine consumption in the US</title>
-      <link>http://www.significantdigits.org/2015/02/beer-vs-wine-consumption-in-the-us/</link>
+      <link>/2015/02/beer-vs-wine-consumption-in-the-us/</link>
       <pubDate>Sun, 15 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/2015/02/beer-vs-wine-consumption-in-the-us/</guid>
+      <guid>/2015/02/beer-vs-wine-consumption-in-the-us/</guid>
       <description>&lt;p&gt;Do you prefer wine or beer? Does the US state you live in prefer wine or beer? And how drunk is your state in general? These are important questions that must be answered.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -55,10 +55,10 @@
     
     <item>
       <title>The most successful hollywood movies of 2014</title>
-      <link>http://www.significantdigits.org/2015/01/the-most-successful-hollywood-movies-of-2014/</link>
+      <link>/2015/01/the-most-successful-hollywood-movies-of-2014/</link>
       <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/2015/01/the-most-successful-hollywood-movies-of-2014/</guid>
+      <guid>/2015/01/the-most-successful-hollywood-movies-of-2014/</guid>
       <description>&lt;p&gt;So what do you think is the most successful Hollywood Movie of 2014? Transformers? Lego movie? Interstellar? There’s one movie that stood head and shoulders above the rest when it comes to financial success and if you’re like me, you may have never heard of it.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -66,10 +66,10 @@
     
     <item>
       <title>Unpredictability of results in One Day International cricket matches</title>
-      <link>http://www.significantdigits.org/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</link>
+      <link>/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</guid>
+      <guid>/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</guid>
       <description>&lt;p&gt;Ask any fan of any sports team and they would claim their team to be the most unpredictable with no guarantee of any result on a given day. The glorious uncertainties of cricket have been extolled by many a commentator over the years. In this post, I do an analysis of One Day International results to see how unpredictability in cricket has fared over the years and finally answer the question: Which is the most unpredictable team in international cricket?&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -77,10 +77,10 @@
     
     <item>
       <title>Decomposing personal finance data</title>
-      <link>http://www.significantdigits.org/2015/01/decomposing-personal-finance-data/</link>
+      <link>/2015/01/decomposing-personal-finance-data/</link>
       <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/2015/01/decomposing-personal-finance-data/</guid>
+      <guid>/2015/01/decomposing-personal-finance-data/</guid>
       <description>&lt;p&gt;Several personal finance management websites like mint or fidelity offer services to track your assets, liabilities and net worth over time. Some standard time series analysis techniques can be applied to this data to analyze your monthly spending habits, trends in your net worth and even predict your future net worth. In this post, I do a simple experiment on my personal finance data to break down my monthly spending habits.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Entropy on Significant Digits</title>
-    <link>http://www.significantdigits.org/tags/entropy/</link>
+    <link>/tags/entropy/</link>
     <description>Recent content in Entropy on Significant Digits</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Jan 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.significantdigits.org/tags/entropy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/entropy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Unpredictability of results in One Day International cricket matches</title>
-      <link>http://www.significantdigits.org/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</link>
+      <link>/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</guid>
+      <guid>/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</guid>
       <description>&lt;p&gt;Ask any fan of any sports team and they would claim their team to be the most unpredictable with no guarantee of any result on a given day. The glorious uncertainties of cricket have been extolled by many a commentator over the years. In this post, I do an analysis of One Day International results to see how unpredictability in cricket has fared over the years and finally answer the question: Which is the most unpredictable team in international cricket?&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Significant Digits</title>
-    <link>http://www.significantdigits.org/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Significant Digits</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Jan 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.significantdigits.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Entropy</title>
-      <link>http://www.significantdigits.org/tags/entropy/</link>
+      <link>/tags/entropy/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/entropy/</guid>
+      <guid>/tags/entropy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Movies</title>
-      <link>http://www.significantdigits.org/tags/movies/</link>
+      <link>/tags/movies/</link>
       <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/movies/</guid>
+      <guid>/tags/movies/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Personal Finance</title>
-      <link>http://www.significantdigits.org/tags/personal-finance/</link>
+      <link>/tags/personal-finance/</link>
       <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/personal-finance/</guid>
+      <guid>/tags/personal-finance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Politics</title>
-      <link>http://www.significantdigits.org/tags/politics/</link>
+      <link>/tags/politics/</link>
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/politics/</guid>
+      <guid>/tags/politics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>http://www.significantdigits.org/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sentiment Analysis</title>
-      <link>http://www.significantdigits.org/tags/sentiment-analysis/</link>
+      <link>/tags/sentiment-analysis/</link>
       <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/sentiment-analysis/</guid>
+      <guid>/tags/sentiment-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sports</title>
-      <link>http://www.significantdigits.org/tags/sports/</link>
+      <link>/tags/sports/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/sports/</guid>
+      <guid>/tags/sports/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tidyverse</title>
-      <link>http://www.significantdigits.org/tags/tidyverse/</link>
+      <link>/tags/tidyverse/</link>
       <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/tidyverse/</guid>
+      <guid>/tags/tidyverse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Time Series Analysis</title>
-      <link>http://www.significantdigits.org/tags/time-series-analysis/</link>
+      <link>/tags/time-series-analysis/</link>
       <pubDate>Sun, 04 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/time-series-analysis/</guid>
+      <guid>/tags/time-series-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Twitter</title>
-      <link>http://www.significantdigits.org/tags/twitter/</link>
+      <link>/tags/twitter/</link>
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.significantdigits.org/tags/twitter/</guid>
+      <guid>/tags/twitter/</guid>
       <description></description>
     </item>
     
