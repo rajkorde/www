@@ -10,230 +10,429 @@ tags:
   - tidyverse
 ---
 
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
 
 
 <p>One of the most transformative changes in my coding has been switching to tidyverse packages from base R. Tidy code is easier to write, read, maintain and almost always faster than the base R counterparts. While there has been some debate on whether base R should be taught to newcomers first or should they jump right into tidyverse, I havent heard anyone deny that ultimately, everyone should be be using tidyverse. A lot of online courses continue to use base R to teach students R programming. Hopefully the table below helps you switch from base R to their equivalent tidyverse commands when you are ready.</p>
 <!--more-->
 <p>Couple of notes before we start. The list below is not exhaustive (best to read package documentation for that). For instance, it doesnt cover lubridate (which covers date/time related functions), forcats (which covers everything you would want to do to factors), broom (which tidies up messy R objects), modelr (which has helper functions for creating models) or ggplot. I also use data frame and tibble interchangeably, although they are obviously different.</p>
-<table>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="left">Base R command</th>
-<th align="left">Tidyverse Command</th>
-<th align="left">What it does and why you should use the tidyverse version</th>
-<th align="left">Comment</th>
+<tr>
+<th style="text-align:left;">
+Base R command
+</th>
+<th style="text-align:left;">
+Tidyverse Command
+</th>
+<th style="text-align:left;">
+What it does and why you should use the tidyverse version
+</th>
+<th style="text-align:left;">
+Comment
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">read.csv()</td>
-<td align="left">read_csv()</td>
-<td align="left">reads in a csv file, but its much faster, shows progress bar for large files, can automatically parse data types</td>
-<td align="left">also see read_delim(), read_tsv() and readxl::read_xlsx()</td>
+<tr>
+<td style="text-align:left;">
+read.csv()
+</td>
+<td style="text-align:left;">
+read_csv()
+</td>
+<td style="text-align:left;">
+reads in a csv file, but its much faster, shows progress bar for large files, can automatically parse data types
+</td>
+<td style="text-align:left;">
+also see read_delim(), read_tsv() and readxl::read_xlsx()
+</td>
 </tr>
-<tr class="even">
-<td align="left">sort(), order()</td>
-<td align="left">arrange()</td>
-<td align="left">sort column(n) within a data frame</td>
-<td align="left">see also order_by()</td>
+<tr>
+<td style="text-align:left;">
+sort(), order()
+</td>
+<td style="text-align:left;">
+arrange()
+</td>
+<td style="text-align:left;">
+sort column(n) within a data frame
+</td>
+<td style="text-align:left;">
+see also order_by()
+</td>
 </tr>
-<tr class="odd">
-<td align="left">mtcars$mpg = …</td>
-<td align="left">mutate()</td>
-<td align="left">modify a column</td>
-<td align="left">see also transmute() which drops existing variables</td>
+<tr>
+<td style="text-align:left;">
+mtcars<span class="math inline">\(mpg = … &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; mutate() &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; modify a column &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; see also transmute() which drops existing variables &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; mtcars[,c(&amp;quot;mpg&amp;quot;, &amp;quot;am&amp;quot;)], subset() &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; select(), rename() &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; select or rename columns &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; see also pull() &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; mtcars[mtcars\)</span>am == 1,], subset()
+</td>
+<td style="text-align:left;">
+filter()
+</td>
+<td style="text-align:left;">
+select rows based on a criterion
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">mtcars[,c(“mpg”, “am”)], subset()</td>
-<td align="left">select(), rename()</td>
-<td align="left">select or rename columns</td>
-<td align="left">see also pull()</td>
+<tr>
+<td style="text-align:left;">
+aggregate()
+</td>
+<td style="text-align:left;">
+summarise(), summarize(), do()
+</td>
+<td style="text-align:left;">
+reduce grouped values to a single value
+</td>
+<td style="text-align:left;">
+see also varaints like summarize_if()
+</td>
 </tr>
-<tr class="odd">
-<td align="left">mtcars[mtcars$am == 1,], subset()</td>
-<td align="left">filter()</td>
-<td align="left">select rows based on a criterion</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+ifelse()
+</td>
+<td style="text-align:left;">
+if_else(), case_when()
+</td>
+<td style="text-align:left;">
+standand vectorized if else, but stricter than base version
+</td>
+<td style="text-align:left;">
+see also near()
+</td>
 </tr>
-<tr class="even">
-<td align="left">aggregate()</td>
-<td align="left">summarise(), summarize(), do()</td>
-<td align="left">reduce grouped values to a single value</td>
-<td align="left">see also varaints like summarize_if()</td>
+<tr>
+<td style="text-align:left;">
+unique()
+</td>
+<td style="text-align:left;">
+distinct()
+</td>
+<td style="text-align:left;">
+finds unique rows in a data frame, but its much, faster
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">ifelse()</td>
-<td align="left">if_else(), case_when()</td>
-<td align="left">standand vectorized if else, but stricter than base version</td>
-<td align="left">see also near()</td>
+<tr>
+<td style="text-align:left;">
+length(unique())
+</td>
+<td style="text-align:left;">
+n_distinct()
+</td>
+<td style="text-align:left;">
+count the number of distinct values in a vector, faster
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">unique()</td>
-<td align="left">distinct()</td>
-<td align="left">finds unique rows in a data frame, but its much, faster</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+sample(), sample.int()
+</td>
+<td style="text-align:left;">
+sample_n(), sample_frac()
+</td>
+<td style="text-align:left;">
+sample n rows or a fraction of rows from a dataframe
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">length(unique())</td>
-<td align="left">n_distinct()</td>
-<td align="left">count the number of distinct values in a vector, faster</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+all.equal()
+</td>
+<td style="text-align:left;">
+all_equal()
+</td>
+<td style="text-align:left;">
+checks if two vectors are the same
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">sample(), sample.int()</td>
-<td align="left">sample_n(), sample_frac()</td>
-<td align="left">sample n rows or a fraction of rows from a dataframe</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+merge()
+</td>
+<td style="text-align:left;">
+inner_join(), left_join()
+</td>
+<td style="text-align:left;">
+perform joins, much faster, verbose, and row order is maintain
+</td>
+<td style="text-align:left;">
+see also right_join(), full_join(), semi_join(), anti_join()
+</td>
 </tr>
-<tr class="odd">
-<td align="left">all.equal()</td>
-<td align="left">all_equal()</td>
-<td align="left">checks if two vectors are the same</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+rbind(), cbind()
+</td>
+<td style="text-align:left;">
+bind_rows(), bind_cols()
+</td>
+<td style="text-align:left;">
+concatenate two dataframes along rows or columns, much faster
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">merge()</td>
-<td align="left">inner_join(), left_join()</td>
-<td align="left">perform joins, much faster, verbose, and row order is maintain</td>
-<td align="left">see also right_join(), full_join(), semi_join(), anti_join()</td>
+<tr>
+<td style="text-align:left;">
+x &gt;= left &amp; x &lt;= right
+</td>
+<td style="text-align:left;">
+between()
+</td>
+<td style="text-align:left;">
+easier to read and faster implementation for larege datasets
+</td>
+<td style="text-align:left;">
+see also near()
+</td>
 </tr>
-<tr class="odd">
-<td align="left">rbind(), cbind()</td>
-<td align="left">bind_rows(), bind_cols()</td>
-<td align="left">concatenate two dataframes along rows or columns, much faster</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+nrow(), sum()
+</td>
+<td style="text-align:left;">
+tally(), count(), add_tally(), add_count()
+</td>
+<td style="text-align:left;">
+count or sum up rows
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">x &gt;= left &amp; x &lt;= right</td>
-<td align="left">between()</td>
-<td align="left">easier to read and faster implementation for larege datasets</td>
-<td align="left">see also near()</td>
+<tr>
+<td style="text-align:left;">
+c()
+</td>
+<td style="text-align:left;">
+combine()
+</td>
+<td style="text-align:left;">
+combine into a vector
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">nrow(), sum()</td>
-<td align="left">tally(), count(), add_tally(), add_count()</td>
-<td align="left">count or sum up rows</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+extends base R
+</td>
+<td style="text-align:left;">
+cumall(), cumany(), cummean()
+</td>
+<td style="text-align:left;">
+extends base R collection of cumsum(), cumprod() etc
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">c()</td>
-<td align="left">combine()</td>
-<td align="left">combine into a vector</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+mtcars<span class="math inline">\(mpg[1,] etc &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; first(), last(), n(), top_n() &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; works within groups, allows you to order by another column(s) and provide defaults for missing values &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; split(), aggregate() &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; group_by() &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; create a grouped data frame (tibble) to perform operations on groups &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; see also ungroup() &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; intersect(), union() &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; intersect(), union() &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; set operations, but dplyr works on data frames as well &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; mtcars\)</span>mpg2 = c(NA, mtcars$mpg[1:nrow(mtcars)-1])
+</td>
+<td style="text-align:left;">
+lead(), lag()
+</td>
+<td style="text-align:left;">
+No equivalent command in base R, easier to read
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">extends base R</td>
-<td align="left">cumall(), cumany(), cummean()</td>
-<td align="left">extends base R collection of cumsum(), cumprod() etc</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+ifelse(…, NA)
+</td>
+<td style="text-align:left;">
+na_if()
+</td>
+<td style="text-align:left;">
+convert a value to NA
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">mtcars$mpg[1,] etc</td>
-<td align="left">first(), last(), n(), top_n()</td>
-<td align="left">works within groups, allows you to order by another column(s) and provide defaults for missing values</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+switch()
+</td>
+<td style="text-align:left;">
+recode()
+</td>
+<td style="text-align:left;">
+change certain values in your vector
+</td>
+<td style="text-align:left;">
+see also forcats package when dealing with factors
+</td>
 </tr>
-<tr class="odd">
-<td align="left">split(), aggregate()</td>
-<td align="left">group_by()</td>
-<td align="left">create a grouped data frame (tibble) to perform operations on groups</td>
-<td align="left">see also ungroup()</td>
+<tr>
+<td style="text-align:left;">
+mtcars[3:5,]
+</td>
+<td style="text-align:left;">
+slice()
+</td>
+<td style="text-align:left;">
+select rows bases on row numbers
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">intersect(), union()</td>
-<td align="left">intersect(), union()</td>
-<td align="left">set operations, but dplyr works on data frames as well</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+seq_along(), quantile()
+</td>
+<td style="text-align:left;">
+row_number(), ntile(), min_ran() etc
+</td>
+<td style="text-align:left;">
+add rankings in various ways, much richer set of rankings supported than base r
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">mtcars<span class="math inline">\(mpg2 = c(NA, mtcars\)</span>mpg[1:nrow(mtcars)-1])</td>
-<td align="left">lead(), lag()</td>
-<td align="left">No equivalent command in base R, easier to read</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+no easy way
+</td>
+<td style="text-align:left;">
+complete(), expand()
+</td>
+<td style="text-align:left;">
+expands the dataframe so that supplied columns are completely filled out
+</td>
+<td style="text-align:left;">
+often used with nesting(), see also full_seq()
+</td>
 </tr>
-<tr class="even">
-<td align="left">ifelse(…, NA)</td>
-<td align="left">na_if()</td>
-<td align="left">convert a value to NA</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+expand.grid()
+</td>
+<td style="text-align:left;">
+crossing()
+</td>
+<td style="text-align:left;">
+create a data frame of all possible combinations of supplied vectors
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">switch()</td>
-<td align="left">recode()</td>
-<td align="left">change certain values in your vector</td>
-<td align="left">see also forcats package when dealing with factors</td>
+<tr>
+<td style="text-align:left;">
+ifelse(is.na(…), …)
+</td>
+<td style="text-align:left;">
+drop_na(), replace_na()
+</td>
+<td style="text-align:left;">
+drop rows with missing values or convert NAs to supplied values
+</td>
+<td style="text-align:left;">
+see also fill(), coalesce()
+</td>
 </tr>
-<tr class="even">
-<td align="left">mtcars[3:5,]</td>
-<td align="left">slice()</td>
-<td align="left">select rows bases on row numbers</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+some mix of paste/strsplit
+</td>
+<td style="text-align:left;">
+separate(), unite()
+</td>
+<td style="text-align:left;">
+separate two columns based on regex or combine two columns into one
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">seq_along(), quantile()</td>
-<td align="left">row_number(), ntile(), min_ran() etc</td>
-<td align="left">add rankings in various ways, much richer set of rankings supported than base r</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+reshape2::dcast()
+</td>
+<td style="text-align:left;">
+spread()
+</td>
+<td style="text-align:left;">
+convert long (tidy) data into wide (untidy) format
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">no easy way</td>
-<td align="left">complete(), expand()</td>
-<td align="left">expands the dataframe so that supplied columns are completely filled out</td>
-<td align="left">often used with nesting(), see also full_seq()</td>
+<tr>
+<td style="text-align:left;">
+reshape2::melt()
+</td>
+<td style="text-align:left;">
+gather()
+</td>
+<td style="text-align:left;">
+convert wide (untidy) data into long(tidy) format
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">expand.grid()</td>
-<td align="left">crossing()</td>
-<td align="left">create a data frame of all possible combinations of supplied vectors</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+replicate()
+</td>
+<td style="text-align:left;">
+rerun()
+</td>
+<td style="text-align:left;">
+run an expression n number of times
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td align="left">ifelse(is.na(…), …)</td>
-<td align="left">drop_na(), replace_na()</td>
-<td align="left">drop rows with missing values or convert NAs to supplied values</td>
-<td align="left">see also fill(), coalesce()</td>
+<tr>
+<td style="text-align:left;">
+unlist(lapply(x, <code>[[</code>, n))
+</td>
+<td style="text-align:left;">
+pluck()
+</td>
+<td style="text-align:left;">
+extract elements out of a list
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="odd">
-<td align="left">some mix of paste/strsplit</td>
-<td align="left">separate(), unite()</td>
-<td align="left">separate two columns based on regex or combine two columns into one</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+lapply(), sapply()
+</td>
+<td style="text-align:left;">
+map(), map2()
+</td>
+<td style="text-align:left;">
+apply a function to a set of values, working with lists
+</td>
+<td style="text-align:left;">
+see also map_chr(), map_lgl(), map_int(), map_dbl(), map_df()
+</td>
 </tr>
-<tr class="even">
-<td align="left">reshape2::dcast()</td>
-<td align="left">spread()</td>
-<td align="left">convert long (tidy) data into wide (untidy) format</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">reshape2::melt()</td>
-<td align="left">gather()</td>
-<td align="left">convert wide (untidy) data into long(tidy) format</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">replicate()</td>
-<td align="left">rerun()</td>
-<td align="left">run an expression n number of times</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">unlist(lapply(x, <code>[[</code>, n))</td>
-<td align="left">pluck()</td>
-<td align="left">extract elements out of a list</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">lapply(), sapply()</td>
-<td align="left">map(), map2()</td>
-<td align="left">apply a function to a set of values, working with lists</td>
-<td align="left">see also map_chr(), map_lgl(), map_int(), map_dbl(), map_df()</td>
-</tr>
-<tr class="odd">
-<td align="left">paste0()</td>
-<td align="left">glue()</td>
-<td align="left">combine two strings together, but much more powerful because it allows for expressions</td>
-<td align="left"></td>
+<tr>
+<td style="text-align:left;">
+paste0()
+</td>
+<td style="text-align:left;">
+glue()
+</td>
+<td style="text-align:left;">
+combine two strings together, but much more powerful because it allows for expressions
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
 </tbody>
 </table>
