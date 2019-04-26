@@ -3,148 +3,143 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/analysis/</loc>
+    <loc>http://www.significantdigits.org/categories/analysis/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>http://www.significantdigits.org/categories/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>http://www.significantdigits.org/post/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>http://www.significantdigits.org/tags/r/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>http://www.significantdigits.org/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://www.significantdigits.org/tags/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/2017/10/trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets/</loc>
+    <loc>http://www.significantdigits.org/2017/10/trump-s-twitter-ratio-this-year-and-his-most-unpopular-tweets/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/politics/</loc>
-    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/twitter/</loc>
+    <loc>http://www.significantdigits.org/tags/politics/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/coding/</loc>
+    <loc>http://www.significantdigits.org/tags/twitter/</loc>
+    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.significantdigits.org/categories/coding/</loc>
     <lastmod>2017-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/2017/10/switching-from-base-r-to-tidyverse/</loc>
+    <loc>http://www.significantdigits.org/2017/10/switching-from-base-r-to-tidyverse/</loc>
     <lastmod>2017-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/tidyverse/</loc>
+    <loc>http://www.significantdigits.org/tags/tidyverse/</loc>
     <lastmod>2017-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2017-09-30T14:58:53-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2016/09/divided-states-of-america/</loc>
+    <loc>http://www.significantdigits.org/2016/09/divided-states-of-america/</loc>
     <lastmod>2016-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2016/08/trump-s-emotional-graph-this-year/</loc>
+    <loc>http://www.significantdigits.org/2016/08/trump-s-emotional-graph-this-year/</loc>
     <lastmod>2016-08-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/sentiment-analysis/</loc>
+    <loc>http://www.significantdigits.org/tags/sentiment-analysis/</loc>
     <lastmod>2016-08-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/2015/02/beer-vs-wine-consumption-in-the-us/</loc>
+    <loc>http://www.significantdigits.org/2015/02/beer-vs-wine-consumption-in-the-us/</loc>
     <lastmod>2015-02-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2015/01/the-most-successful-hollywood-movies-of-2014/</loc>
+    <loc>http://www.significantdigits.org/2015/01/the-most-successful-hollywood-movies-of-2014/</loc>
     <lastmod>2015-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/movies/</loc>
+    <loc>http://www.significantdigits.org/tags/movies/</loc>
     <lastmod>2015-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</loc>
+    <loc>http://www.significantdigits.org/2015/01/unpredictability-of-results-in-one-day-international-cricket-matches/</loc>
     <lastmod>2015-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/entropy/</loc>
-    <lastmod>2015-01-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sports/</loc>
+    <loc>http://www.significantdigits.org/tags/entropy/</loc>
     <lastmod>2015-01-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/2015/01/decomposing-personal-finance-data/</loc>
+    <loc>http://www.significantdigits.org/tags/sports/</loc>
+    <lastmod>2015-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.significantdigits.org/2015/01/decomposing-personal-finance-data/</loc>
     <lastmod>2015-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/personal-finance/</loc>
+    <loc>http://www.significantdigits.org/tags/personal-finance/</loc>
     <lastmod>2015-01-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/time-series-analysis/</loc>
+    <loc>http://www.significantdigits.org/tags/time-series-analysis/</loc>
     <lastmod>2015-01-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/archives/</loc>
+    <loc>http://www.significantdigits.org/archives/</loc>
     <priority>0</priority>
   </url>
   

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Significant Digits</title>
-    <link>/categories/</link>
+    <link>http://www.significantdigits.org/categories/</link>
     <description>Recent content in Categories on Significant Digits</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.significantdigits.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Analysis</title>
-      <link>/categories/analysis/</link>
+      <link>http://www.significantdigits.org/categories/analysis/</link>
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/analysis/</guid>
+      <guid>http://www.significantdigits.org/categories/analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coding</title>
-      <link>/categories/coding/</link>
+      <link>http://www.significantdigits.org/categories/coding/</link>
       <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/coding/</guid>
+      <guid>http://www.significantdigits.org/categories/coding/</guid>
       <description></description>
     </item>
     
